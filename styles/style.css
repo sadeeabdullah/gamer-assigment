@@ -204,16 +204,112 @@ nav {
   line-height: 30px;
 }
 
-.short-image{
+.short-image {
   position: relative;
   bottom: 300px;
   right: 120px;
 }
 
-
 /* second section end here */
+/* third section start here */
+.third-section {
+  padding: 0 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.button {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 4px 2px;
+  gap: 15px;
+}
+.button:hover {
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  border: 1px solid rgb(146, 76, 87);
+}
+.button p {
+  font-size: 15px;
+  font-weight: 400;
+}
+/* third section end here */
 
 /* main section end here */
+
+/* footer css start here */
+
+footer {
+ 
+  background-color: #0b0223;
+  margin-top: 100px;
+}
+.footer-title{
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo{
+
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.title{
+  font-size: 45px;
+font-style: normal;
+font-weight: 700;
+}
+.white {
+  color: #fff;
+}
+.soto-account {
+  padding: 70px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.soto-account p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.photo {
+  padding-bottom: 74px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.before-the-last {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.before-the-last p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+.last p {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 18px;
+  padding-bottom: 113px;
+}
+
+/* footer css end here */
 
 /* media queries for mobile starts here */
 
@@ -243,26 +339,26 @@ nav {
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
   }
-  .second-section{
+  .second-section {
     flex-direction: column-reverse;
     padding: 0;
     gap: 0px;
   }
 
-  .second-section-image{
+  .second-section-image {
     padding: 50px;
   }
 
-  .second-section-image>img{
+  .second-section-image > img {
     width: 100%;
-   
   }
-   .short-image{
-   width: 30%;
-   position: relative;
-  left: 50px;
-   
-   
+  .short-image {
+    width: 30%;
+    position: relative;
+    left: 50px;
+  }
+  .soto-account, .photo,.before-the-last  {
+    flex-wrap: wrap;
   }
 }
 
@@ -296,15 +392,15 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
   }
-  .second-section{
+  .second-section {
     flex-direction: column-reverse;
     margin-top: 300px;
-}
+  }
 
-.second-section{
-  flex-direction: column-reverse;
-  padding: 0;
-  gap: 0px;
-}
+  .second-section {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 0px;
+  }
 }
 /* media queries for tablet  END here*/
