@@ -79,14 +79,21 @@ background-clip: text;
 
 /* banner section start here */
 
-/* .banner {
+ .banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.2rem;
-  gap: 100px;
+  gap: 60;
+  padding: 0px 120px;
 }
-
+/* .banner-text{
+  width: 50%;
+  display: flex;
+} */
+/* .banner-text-container{
+  margin: auto;
+  width: 50%;
+} */
 .banner-text-title-first {
   color: #0b0223;
   font-size: 2.8125rem;
@@ -111,7 +118,7 @@ background-clip: text;
   align-items: center;
 }
 .banner-image img {
-  width: 90%;
+  width: 100%;
 }
 
 .btn-header {
@@ -321,13 +328,48 @@ background-clip: text;
 /* footer css end here */
 
 /* media queries for mobile starts here */
+ @media screen and (max-width: 576px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+   /* navbar media queries starts from here */
+  .nav-bar, .nav-menu ul{
+    flex-direction: column;
+   } 
+   .nav-bar{
+    padding-top: 10px;
+   }
+   /* navbar media queries end here */
 
-@media screen and (max-width: 576px) {
- .nav-bar, .nav-menu ul{
-  flex-direction: column;
- } 
- 
+
+   /* banner media queries starts from here */
+   .banner{
+    padding: 0;
+    flex-direction: column-reverse;
+   }
+   
+   
+    
+    /* banner media queries starts from here */
+ }
 
 /* media queries for mobile END here */
 
 /* media queries for tablet  starts here*/
+
+@media screen and (min-height: 577px) and (max-width: 768px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  /* navbar media queries starts from here */
+  .nav-bar, .nav-menu ul{
+    flex-direction: column;
+    margin-top: 10px;
+   } 
+   .nav-bar{
+    padding-top: 10px;
+   }
+  /* navbar media queries end here */
+}
