@@ -171,14 +171,15 @@ nav {
   margin-top: 48px;
   margin-bottom: 100px;
 }
+
 .only-image img {
   width: 100%;
   margin-bottom: 24px;
 }
-
-.only-image img:hover {
-  background-color: red;
+.only-image img:hover{
+  background: rgba(0, 0, 0, 0.6);
 }
+
 
 .ony-funny-games-images {
   color: #534c64;
@@ -188,34 +189,39 @@ nav {
 /* only funny games section style end here */
 
 /* second section start here */
-/* 
 .second-section {
   display: flex;
   align-items: center;
-  padding: 0 150px;
-  gap: 150px;
+  gap: 265px;
+  height: 1000px;
+  padding: 0 80px;
 }
-
+.second-section-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
+  margin-top: -200px;
+}
 .second-section-text-title {
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
-  text-align: right;
 }
 .second-section-text-description {
   color: #534c64;
-  text-align: right;
+  
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 30px; 
 }
-
-.short-image {
+.second-section-image {
   position: relative;
-  bottom: 300px;
-  right: 120px;
-} */
-
+}
+.image1 {
+  position: absolute;
+  top: 400px;
+  left: -140px;
+}
 /* second section end here */
 /* third section start here */
 .third-section {
@@ -342,6 +348,10 @@ footer {
     padding: 0;
     flex-direction: column-reverse;
   }
+  .image1{
+    top: 150px;
+    width: 30px;
+  }
 
   /* banner media queries end from here */
 
@@ -354,20 +364,34 @@ footer {
 
   /* only funny games section media quaries  end  here */
   /* third section media queries  start here */
-  .third-section{
+  .third-section {
     padding: 0;
   }
   /* third section media queries  start here */
 
-
-
   /* footer media queries start here */
-  .soto-account, .photo, .before-the-last, .before-the-last {
+  .soto-account,
+  .photo,
+  .before-the-last,
+  .before-the-last {
     flex-wrap: wrap;
     padding: 0;
   }
 
-  
+  /* second seceond section start here */
+
+
+  .second-section{
+    flex-direction: column-reverse;
+  }
+  .second-image{
+    margin-top: 100px;
+  }
+  .second-section-image img{
+    width: 250px;
+  }
+  /* second seceond section end here */
+
   /* footer media queries start here */
 }
 
@@ -391,25 +415,35 @@ footer {
   }
   /* navbar media queries end here */
   /* only funny games media queries starts from here */
- 
+
   .only-funny-games-images-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     padding: 0;
   }
-   /* only funny games media queries end here */
-
-
-
-
-
-
-   /* footer media queries starts from here */
-   .soto-account, .photo, .before-the-last, .before-the-last {
-    flex-wrap: wrap;
-    padding: 0;
+  /* only funny games media queries end here */
+  .second-section{
+    flex-direction: column-reverse;
+  }
+  .second-image{
+    margin-top: 100px;
+  }
+  .second-section-image img{
+    width: 250px;
+  }
+  .image{
+    top: -100px;
   }
 
-   /* footer media queries starts from here */
+  /* footer media queries starts from here */
+  /* .soto-account,
+  .photo,
+  .before-the-last,
+  .before-the-last {
+    flex-wrap: wrap;
+    padding: 0;
+  } */
   
+
+  /* footer media queries starts from here */
 }
