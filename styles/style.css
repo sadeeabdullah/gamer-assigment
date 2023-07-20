@@ -17,7 +17,7 @@ header {
 
 /* navbar section css start */
 
-nav {
+ nav {
   
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -73,27 +73,20 @@ background-clip: text;
 
   border-radius: 8px;
   background-color: rgba(11, 2, 35, 0.1);
-}
+} 
 
 /* navbar section css end */
 
 /* banner section start here */
 
- .banner {
+  .banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60;
   padding: 0px 120px;
 }
-/* .banner-text{
-  width: 50%;
-  display: flex;
-} */
-/* .banner-text-container{
-  margin: auto;
-  width: 50%;
-} */
+
 .banner-text-title-first {
   color: #0b0223;
   font-size: 2.8125rem;
@@ -145,7 +138,7 @@ background-clip: text;
   font-style: normal;
   font-weight: 600;
   color: #ffffff;
-}
+} 
 
 /* banner section end here */
 
@@ -155,7 +148,7 @@ background-clip: text;
 
 /* only funny games section style start here */
 
-/* .only-funny-games-text {
+.only-funny-games-text {
   text-align: center;
   margin-top: 120px;
 }
@@ -196,7 +189,7 @@ background-clip: text;
   color: #534c64;
   font-size: 12px;
   font-weight: 500;
-} */
+} 
 /* only funny games section style end here */
 
 /* second section start here */
@@ -331,7 +324,7 @@ background-clip: text;
  @media screen and (max-width: 576px) {
   *{
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
    /* navbar media queries starts from here */
   .nav-bar, .nav-menu ul{
@@ -351,7 +344,18 @@ background-clip: text;
    
    
     
-    /* banner media queries starts from here */
+    /* banner media queries end from here */
+
+
+
+    /* only funny games section media quaries starts from here */
+    .only-funny-games-images-container{
+      grid-template-columns: repeat(1, 1fr);
+      padding:0;
+      gap: 100px;
+    }
+
+    /* only funny games section media quaries  end  here */
  }
 
 /* media queries for mobile END here */
@@ -361,7 +365,7 @@ background-clip: text;
 @media screen and (min-height: 577px) and (max-width: 768px) {
   *{
     margin: 0;
-    padding: 0;
+    padding: 20px;
   }
   /* navbar media queries starts from here */
   .nav-bar, .nav-menu ul{
@@ -372,4 +376,10 @@ background-clip: text;
     padding-top: 10px;
    }
   /* navbar media queries end here */
+  .only-funny-games-images-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0;
+    
+  }
 }
