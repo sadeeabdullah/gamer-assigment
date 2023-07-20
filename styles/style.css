@@ -10,7 +10,7 @@
 /* header section css start */
 
 header {
-  padding: 0px 150px;
+  
   background-image: url("../images/Group\ 14.png");
   background-repeat: no-repeat;
 }
@@ -18,36 +18,43 @@ header {
 /* navbar section css start */
 
 nav {
+  
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
-  padding: 0px auto;
+  
 }
 .nav-bar {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
 }
 
 .nav-logo {
+  width: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
+ 
 }
 .nav-logo-title {
   font-size: 2.8rem;
   font-weight: 700;
 }
 
-.g-color {
-  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.nav-logo-title strong{
+  background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .nav-menu ul {
+  
   display: flex;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 32px;
 }
 
 .nav-menu ul li {
@@ -72,7 +79,7 @@ nav {
 
 /* banner section start here */
 
-.banner {
+/* .banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,7 +148,7 @@ nav {
 
 /* only funny games section style start here */
 
-.only-funny-games-text {
+/* .only-funny-games-text {
   text-align: center;
   margin-top: 120px;
 }
@@ -174,15 +181,19 @@ nav {
   margin-bottom: 24px;
 }
 
+.only-image img:hover {
+  background-color: red;
+}
+
 .ony-funny-games-images {
   color: #534c64;
   font-size: 12px;
   font-weight: 500;
-}
+} */
 /* only funny games section style end here */
 
 /* second section start here */
-
+/* 
 .second-section {
   display: flex;
   align-items: center;
@@ -208,11 +219,11 @@ nav {
   position: relative;
   bottom: 300px;
   right: 120px;
-}
+} */
 
 /* second section end here */
 /* third section start here */
-.third-section {
+/* .third-section {
   padding: 0 200px;
   display: flex;
   flex-wrap: wrap;
@@ -238,34 +249,32 @@ nav {
 .button p {
   font-size: 15px;
   font-weight: 400;
-}
+} */
 /* third section end here */
 
 /* main section end here */
 
 /* footer css start here */
 
-footer {
- 
+/* footer {
   background-color: #0b0223;
   margin-top: 100px;
 }
-.footer-title{
+.footer-title {
   padding-top: 120px;
   display: flex;
   align-items: center;
 }
 
-.footer-logo{
-
+.footer-logo {
   display: flex;
   align-items: center;
   margin: 0 auto;
 }
-.title{
+.title {
   font-size: 45px;
-font-style: normal;
-font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
 }
 .white {
   color: #fff;
@@ -274,7 +283,7 @@ font-weight: 700;
   padding: 70px 0px;
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 3.75rem;
 }
 .soto-account p {
   color: #fff;
@@ -287,12 +296,12 @@ font-weight: 700;
   padding-bottom: 74px;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 3rem;
 }
 .before-the-last {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 3.75rem;
 }
 
 .before-the-last p {
@@ -307,100 +316,18 @@ font-weight: 700;
   font-weight: 500;
   margin-top: 18px;
   padding-bottom: 113px;
-}
+}  */
 
 /* footer css end here */
 
 /* media queries for mobile starts here */
 
 @media screen and (max-width: 576px) {
-  * {
-    padding: 10px;
-  }
-  .nav-bar,
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .banner {
-    flex-direction: column-reverse;
-    gap: 50px;
-    margin-top: 70px;
-  }
-  .banner-image img {
-    width: 90%;
-  }
-
-  header {
-    padding: 10px 20px;
-  }
-
-  .only-funny-games-images-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 0;
-  }
-  .second-section {
-    flex-direction: column-reverse;
-    padding: 0;
-    gap: 0px;
-  }
-
-  .second-section-image {
-    padding: 50px;
-  }
-
-  .second-section-image > img {
-    width: 100%;
-  }
-  .short-image {
-    width: 30%;
-    position: relative;
-    left: 50px;
-  }
-  .soto-account, .photo,.before-the-last  {
-    flex-wrap: wrap;
-  }
-}
+ .nav-bar, .nav-menu ul{
+  flex-direction: column;
+ } 
+ 
 
 /* media queries for mobile END here */
 
 /* media queries for tablet  starts here*/
-
-@media screen and (min-width: 576.1px) and (max-width: 768px) {
-  * {
-    margin: 0;
-  }
-
-  .nav-bar {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .banner {
-    flex-direction: column-reverse;
-    gap: 50px;
-    margin-top: 70px;
-  }
-  .banner-image img {
-    width: 90%;
-  }
-
-  header {
-    padding: 10px 20px;
-  }
-
-  .only-funny-games-images-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-  }
-  .second-section {
-    flex-direction: column-reverse;
-    margin-top: 300px;
-  }
-
-  .second-section {
-    flex-direction: column-reverse;
-    padding: 0;
-    gap: 0px;
-  }
-}
-/* media queries for tablet  END here*/
