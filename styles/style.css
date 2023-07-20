@@ -353,16 +353,21 @@ footer {
   }
 
   /* only funny games section media quaries  end  here */
-
+  /* third section media queries  start here */
+  .third-section{
+    padding: 0;
+  }
+  /* third section media queries  start here */
 
 
 
   /* footer media queries start here */
-
   .soto-account, .photo, .before-the-last, .before-the-last {
     flex-wrap: wrap;
     padding: 0;
   }
+
+  
   /* footer media queries start here */
 }
 
@@ -373,7 +378,7 @@ footer {
 @media screen and (min-height: 577px) and (max-width: 768px) {
   * {
     margin: 0;
-    padding: 50px;
+    padding: px;
   }
   /* navbar media queries starts from here */
   .nav-bar,
